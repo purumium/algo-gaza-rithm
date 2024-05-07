@@ -1,2 +1,3 @@
 # 코드를 공부합니다
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+
+알고리즘을 공부하고, 코드를 작성해보는 공간
