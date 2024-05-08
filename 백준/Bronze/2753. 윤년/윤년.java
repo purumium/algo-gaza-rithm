@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// 윤년이면 1, 아니면 0
-		// 윤년은 4의 배수(str % 4 == 0 && str )
 
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
