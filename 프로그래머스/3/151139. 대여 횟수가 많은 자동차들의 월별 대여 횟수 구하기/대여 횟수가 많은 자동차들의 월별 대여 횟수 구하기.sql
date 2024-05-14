@@ -14,7 +14,7 @@ FROM (
                          FROM 
                              CAR_RENTAL_COMPANY_RENTAL_HISTORY
                          WHERE 
-                             START_DATE BETWEEN TO_DATE('2022-08-01', 'YYYY-MM-DD') AND TO_DATE('2022-10-30', 'YYYY-MM-DD') 
+                             START_DATE BETWEEN TO_DATE('2022-08-01', 'YYYY-MM-DD') AND TO_DATE('2022-10-31', 'YYYY-MM-DD') 
                          GROUP BY 
                              CAR_ID
                          HAVING 
