@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int num = sc.nextInt();
+		sc.nextLine();
+		
+		int count = 0;
+		String input = null;
+		for (int i = 0; i < num; i++) {
+			input = sc.nextLine();
+			
+			count += result(input);
+		}
+		
+		System.out.println(count);
+		
+	}
+
+	public static int result(String input) {
+        char[] arr = input.toCharArray();
+        int count = 0;
+        boolean isGroupWord = true;
+
+        outerLoop:
+        for (int i = 1; i < input.length(); i++) {
+            for (int j = 0; j < i; j++) {
+                if (arr[i] == arr[j]) {
+                    if (arr[i] != arr[i - 1]) {
+                        isGroupWord = false;
+                        break outerLoop;
+                    }
+                }
+            }
+        }
+
+        if (isGroupWord) {
+            count++;
+        }
+        
+        return count;
+	}
+}
